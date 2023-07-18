@@ -1,6 +1,8 @@
 package models;
 
-public abstract class BakedGood {
+import interfaces.ISell;
+
+public abstract class BakedGood implements ISell {
 
     protected String name;
     protected String baseFlavour;
@@ -18,7 +20,12 @@ public abstract class BakedGood {
     }
 
     public String expressBaseFlavour(){
-        return "This is a" + this.name + ".";
+        return "This is a" + this.name + "with a base flavour of " + this.baseFlavour;
+    }
+
+    @Override
+    public double getMargin(){
+        return this.calculateMargin();
     }
 
 }

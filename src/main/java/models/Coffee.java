@@ -1,6 +1,8 @@
 package models;
 
-public class Coffee {
+import interfaces.ISell;
+
+public class Coffee implements ISell {
 
     private String coffeeBean;
     private String coffeeAroma;
@@ -19,5 +21,8 @@ public class Coffee {
     }
 
 
-
+    @Override
+    public double getMargin() {
+        return calculateMargin();
+    }
 }

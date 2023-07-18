@@ -31,7 +31,7 @@ public class CarrotCake extends BakedGood {
 
     @Override
     public String expressBaseFlavour(){
-        return "This is a " + this.name + "with a base flavour of " + this.baseFlavour;
+        return "This is a " + this.name + " with a base flavour of " + this.baseFlavour;
     }
 
 }
