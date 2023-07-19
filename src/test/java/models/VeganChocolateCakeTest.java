@@ -22,4 +22,17 @@ public class VeganChocolateCakeTest {
         assertThat(veganChocolateCake.noAnimalProduce()).isEqualTo("This product has no animal produce");
     }
 
+//    BakedGood getters and setters test
+
+
+
+//    ISell test
+    @Test
+    public void isellTest(){
+        veganChocolateCake.calculateMargin();
+        assertThat(veganChocolateCake.getMargin()).isEqualTo(10);
+    }
+
+
+
 }

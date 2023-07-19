@@ -13,5 +13,11 @@ public class VeganChocolateCake extends Vegan {
         return "This is a " + this.name + "with a base flavour of " + this.baseFlavour;
     }
 
+//    overload
+    public String expressBaseFlavour(String message){
+        return "This is a " + this.name + "with a base flavour of " + this.baseFlavour;
+    }
+
+
 
 }
