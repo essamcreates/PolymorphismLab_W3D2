@@ -35,4 +35,15 @@ class CarrotCakeTest {
         assertThat(result).isEqualTo("This is a Carrot Cake with a base flavour of chocolate");
 
     }
+
+    @Test
+    void calculateMargin() {
+        double result = carrotCake.calculateMargin();
+        assertThat(result).isEqualTo(10);
+    }
+
+
+    @Test
+    void getMargin() {
+    }
 }

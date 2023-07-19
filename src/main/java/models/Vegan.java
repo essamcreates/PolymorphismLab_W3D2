@@ -8,7 +8,8 @@ public abstract class Vegan extends BakedGood {
         super(name, baseFlavour, sellPrice, cost);
     }
 
-    public String noMeatProduce(){
-        return "This product has no meat produce";
+    public String noAnimalProduce(){
+        return "This product has no animal produce";
     }
 }
+

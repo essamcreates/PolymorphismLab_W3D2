@@ -7,17 +7,17 @@ import java.util.ArrayList;
 
 public class Bakery {
 
-    private ArrayList<ISell> bakeryGoods;
+    private ArrayList<ISell> produceStock;
     private double till;
 
     public Bakery(){
-        this.bakeryGoods = new ArrayList<ISell>();
+        this.produceStock = new ArrayList<ISell>();
         this.till = 0;
     }
 
     public void addToTill(){
-        for (int i = 0; i < bakeryGoods.size() ; i++) {
-        this.till += bakeryGoods.get(i).getMargin();
+        for (int i = 0; i < produceStock.size() ; i++) {
+        this.till += produceStock.get(i).getMargin();
         }
     }
 
@@ -26,11 +26,11 @@ public class Bakery {
     }
 
     public int countBakeryGoods(){
-        return this.bakeryGoods.size();
+        return this.produceStock.size();
     }
 
     public void addBakeryGood(ISell iSell){
-        this.bakeryGoods.add(iSell);
+        this.produceStock.add(iSell);
     }
 
 

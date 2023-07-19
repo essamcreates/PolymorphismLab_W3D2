@@ -7,19 +7,5 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BakedGoodTest {
 
-    @BeforeEach
-    void setUp() {
-    }
 
-    @Test
-    void calculateMargin() {
-    }
-
-    @Test
-    void expressBaseFlavour() {
-    }
-
-    @Test
-    void getMargin() {
-    }
 }
