@@ -18,26 +18,26 @@ class CarrotCakeTest {
     }
 
     @Test
-    void hasVegetable() {
+    void canCheckProductForVegetable() {
         Boolean result = Boolean.valueOf(carrotCake.hasVegetable(true));
         assertThat(result).isEqualTo(false);
     }
 
     @Test
-    void addCustard() {
+    void canAddCustard() {
         String result = carrotCake.addCustard(true);
                 assertThat(result).isEqualTo("has custard");
     }
 
     @Test
-    void expressBaseFlavour() {
+    void canExpressBaseFlavour() {
         String result = carrotCake.expressBaseFlavour();
         assertThat(result).isEqualTo("This is a Carrot Cake with a base flavour of chocolate");
 
     }
 
     @Test
-    void calculateMargin() {
+    void canCalculateMargin() {
         double result = carrotCake.calculateMargin();
         assertThat(result).isEqualTo(10);
     }

@@ -17,7 +17,7 @@ public class CarrotCake extends BakedGood {
         if (this.hasVegetable){
             return "has vegetable";
         }
-        return null;
+        return "doesn't have vegetable";
     }
 
     public String addCustard(boolean addCustard){

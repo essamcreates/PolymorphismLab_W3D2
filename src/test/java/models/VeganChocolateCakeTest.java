@@ -18,7 +18,7 @@ public class VeganChocolateCakeTest {
     }
 
     @Test
-    public void noMeatTest(){
+    public void canCheckForAnimalProduce(){
         assertThat(veganChocolateCake.noAnimalProduce()).isEqualTo("This product has no animal produce");
     }
 
